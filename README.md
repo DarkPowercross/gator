@@ -92,4 +92,23 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
       ```
 
 
+3. Migrate the databse
 
+   **Make sure goose is installed**
+   ```bash
+   go install github.com/pressly/goose/v3/cmd/goose@latest
+   ```
+
+   **Get your connection string, format it like this:
+   ```bash
+   protocol://username:password@host:port/database
+   ```
+
+   for example:
+   macOS (no password, your username): postgres://Darkpowercross:@localhost:5432/gator
+   Linux (password that we set): postgres://postgres:postgres@localhost:5432/gator
+
+   you can test that it works using psql
+   ```bash
+   psql postgres://Darkpowercross:@localhost:5432/gator
+   ```
