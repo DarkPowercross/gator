@@ -92,7 +92,7 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
       ```
 
 
-3. Migrate the databse
+3. Migrate the database
 
    **Make sure goose is installed**
    ```bash
@@ -112,3 +112,49 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
    ```bash
    psql postgres://Darkpowercross:@localhost:5432/gator
    ```
+
+   **update the database schema**
+   ```
+   cd sql/schema
+   goose postgres <connection_string> up
+   ```
+
+**4.ensure all queries are up to date**
+   ensure sqlc is installed:
+   ```bash
+   go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+   ```
+   
+   From the root of the folder run the below command:
+
+   ```bash
+   sqlc generate
+   ```
+
+**5. Create config file**
+   Create the JSON file in your home directory called .gatorconfig.json:
+   ```bash
+   touch ~/.gatorconfig.json
+   nano ~/.gatorconfig.json
+   ```
+
+   add the followign structure:
+   ```bash
+   
+  "db_url": "DB_URL created earlier",
+  "current_user_name": "Dont set this, the program will do this for us"
+   ```
+
+   Dont worry about setting the user for now as we will do that when we run the application
+
+**6. Install the gator application**
+
+   Now that we have done the initial setup lets install the gator application.
+
+   From the root of the folder run the below:
+
+   ```bash
+   go install
+   ```
+
+   Then you should be ready to use the application.
