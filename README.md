@@ -39,10 +39,12 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
 
       ```bash
       brew install postgresql@15
+      ```
 
       **Linux / WSL (Debian):**
 
       ```bash
       sudo apt update
       sudo apt install postgresql postgresql-contrib
+      ```
 
