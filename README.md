@@ -48,3 +48,11 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
       sudo apt install postgresql postgresql-contrib
       ```
 
+      ** Update PostgreSQL password (Linux Only) **
+      ```bash
+      sudo passwd postgres
+      ```
+
+         enter a password, dont forget it as you will need it later
+
+
