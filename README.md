@@ -158,3 +158,35 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
    ```
 
    Then you should be ready to use the application.
+
+
+### Usage
+
+   1. **Add a user**
+      ```bash
+      gator register "Your Name"
+      ```
+   2. **Login**
+      ```bash
+      gator login "Your Name"
+      ```
+   3. **Add a feed**
+      ```bash
+      gator addfeed "https://example.com/rss"
+      ```
+   4. **List feeds**
+      ```bash
+      gator feeds
+      ```
+   5. **Follow a feed**
+      ```bash
+      gator follow URL
+      ```
+   6. **Fetch posts**
+      ```bash
+      gator agg <"time frame, i.e 15s, 1m, 1h, 1d">
+      ```
+   7. **View posts**
+      ```bash
+      gator Browse
+      ```
