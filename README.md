@@ -35,17 +35,16 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
 
 2. **Set up PostgreSQL**
 
-**macOS with brew**
+      **macOS with brew**
 
-   ```bash
-   brew install postgresql@15
-   ```
+         ```bash
+         brew install postgresql@15
+         ```
 
-**Linux / WSL (Debian):**
+      **Linux / WSL (Debian):**
 
-   ```bash
-   sudo apt update
-   sudo apt install postgresql postgresql-contrib
-   ```
+         ```bash
+         sudo apt update
+         sudo apt install postgresql postgresql-contrib
+         ```
 
-   
