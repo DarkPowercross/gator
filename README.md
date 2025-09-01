@@ -55,4 +55,41 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
 
       enter a password, dont forget it as you will need it later
 
+      **Connect to PSQL**
+      Enter the psql shell:
+
+      ```bash
+      Mac: psql postgres
+      Linux: sudo -u postgres psql
+      ```
+
+      **Create the database**
+      Your shell should look like this:
+      ```bash
+      postgres=#
+      ```
+
+      run the below command to create the psql database:
+
+      ```bash
+      CREATE DATABASE gator;
+      ```
+
+      enter the newly created database using this:
+      ```bash
+      \c gator
+      ```
+
+      your terminal should look like this:
+
+      ```bash
+      gator=#
+      ```
+
+      Set the user password(Linux Only)
+      ```bash
+      ALTER USER postgres PASSWORD 'postgres';
+      ```
+
+
 
