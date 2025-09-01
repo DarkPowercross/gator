@@ -31,5 +31,5 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
    ```bash
    git clone https://github.com/yourusername/gator.git
    cd gator
-
-export DB_URL="postgres://username:password@localhost:5432/gator?sslmode=disable"
+   export DB_URL="postgres://username:password@localhost:5432/gator?sslmode=disable"
+   ```
