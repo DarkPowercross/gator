@@ -32,3 +32,20 @@ It lets you subscribe to feeds, fetch posts, and view them in a simple terminal 
    git clone https://github.com/DarkPowercross/gator.git
    cd gator
    ```
+
+2. **Set up PostgreSQL**
+
+**macOS with brew**
+
+   ```bash
+   brew install postgresql@15
+   ```
+
+**Linux / WSL (Debian):**
+
+   ```bash
+   sudo apt update
+   sudo apt install postgresql postgresql-contrib
+   ```
+
+   
